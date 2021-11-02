@@ -1,0 +1,12 @@
+version: "3.3"
+
+services:
+   db:
+      image: "postgres"
+      container_name: dev-postgres
+      environment:
+        POSTGRES_USER: "postgres"
+        POSTGRES_PASSWORD: "admin"
+        POSTGRES_DB: "DECO7381"
+      ports:
+        - "5432:5432"
